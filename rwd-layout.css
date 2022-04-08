@@ -1,0 +1,42 @@
+.list{
+    display: flex;justify-content: center;
+}
+.prod{
+    flex: none;width: 280px;margin: 10px;
+    background-color: pink;text-align: center;
+}
+.headline{
+    text-align:center;font-size: 50px;font-weight: bold;
+    margin-bottom: 50px;
+}
+.desktop{
+    text-align: center;
+    display: block;
+}
+.mobile{
+    text-align: center;
+    display: none
+}
+/*螢幕寬度小於1250px，套用以下設定*/
+@media(max-width:1250px){
+    .list{
+        flex-wrap: wrap;
+    }
+    .prod{
+        width: 45%;
+    }
+}
+/*螢幕寬度小於500px，套用以下設定*/
+@media(max-width:500px){
+    .prod{
+        width: 90%;
+    }
+    .headline{
+        font-size: 15px;
+    }
+    .desktop{        
+        display: none;
+    }
+    .mobile{    
+        display: block
+}

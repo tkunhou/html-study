@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewreport"/>
+        <meta content="width=device-width, inital-scale=1.0"/>
+        <title>JavaScript 資料</title>
+    </head>
+    <body>
+        //JavaScript每一個指令後面都要加分號;
+        <script>
+            console.log(33);
+            console.log("你好");
+            console.log(true);
+        </script>
+        
+        //宣告變數 & 常數
+        <script>
+            //變數
+            let x;
+            console.log(x);
+            x=5;
+            console.log(x);
+            x="戴孟杰";
+            console.log(x);
+
+            //常數
+            const z=999;
+            console.log(z);
+        </script>
+//上面已經宣告過x了，這邊就不能再宣告一次
+        <script>
+            let g=7%3;
+            console.log(g);
+            g=g+1; //也可以寫成 g+=1
+            console.log(g);
+            g-=4;
+            console.log(g);
+            x=3>4 //上面宣告過的x這邊也可以續用
+            console.log(x);
+            
+            x="abc"=="abc";
+            console.log(x);
+
+            //單元運算:!  ++  --
+            x=!x //上面x="abc"=="abc"結果為 true，這邊用一個驚嘆號將結果反轉
+            console.log(x)
+            g=3;
+            g++; //g=g+1的意思
+            console.log(g);
+        </script>
+        <script>
+            //建立物件
+            let man=new Object; //建立空白物件
+            man.age=2.5;  //物件.成員名稱=資料
+            man.name="阿胖";
+            man.talk=function(){
+                console.log("hello");
+                console.log("我是",this.name,"今年",this.age,"歲!");
+            };
+            //使用呼叫物件
+            console.log(man);
+            console.log(man.age>5);
+            man.talk();
+        
+            //用JSON建立物件 let 物件名稱={成員名稱:資料,成員名稱:資料,...}，功能結果會跟上面的建立方式相同
+            let man1={
+                age:2.5,
+                name:"阿杰",
+                talk:function(){
+                    console.log("我是",this.name,"今年",this.age,"歲!")
+            }
+        };
+            console.log(man1);
+            console.log(man1.name);
+            man1.talk();        
+
+            //Array 陣列物件，利用有順序的編號來管理資料
+             
+        </script>
+    </body>
+</html>

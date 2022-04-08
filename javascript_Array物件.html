@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New object</title>
+</head>
+<body>
+    <script>
+        let grades=[]; //方法一，先建一個空白陣列物件，再逐筆加入
+        grades.push(90);
+        grades.push(66);
+        grades.push(78);
+        console.log(grades);
+
+        let gr=[70,50,84]; //方法二，直接建立有內容的陣列物件，也可以後續加入其他資料
+        gr.push(89)
+        console.log(gr);
+        console.log(gr[1]);
+        console.log(gr[0]);
+        console.log(grades[2]);
+
+        //用 for 迴圈逐一取得陣列中的資料
+        for(let i=0;i<gr.length;i++){
+            console.log(gr[i])
+        };
+        let total=0;
+        for(let a=0;a<grades.length;a++){
+            total=total+grades[a];
+        }
+        let avg=total/grades.length
+        console.log(total);
+        console.log(avg)
+    </script>
+</body>
+</html>

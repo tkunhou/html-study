@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript：HTML DOM 核心觀念</title>
+</head>
+<body>
+    <script>
+        //網頁內建的 window 物件
+        console.log(window);
+        console.log(window.innerWidth );
+        console.log(window.screen.height,window.screen.width);
+        console.log(window.location.href);
+        //更改 windows 的內容
+        window.innerWidth=300;
+        
+        //documeunt
+        console.log(window.document);
+        //取得 document 中的資料:取得網頁標題
+        console.log(document.title);
+        //更換 document 中資料的內容:更改網頁標題
+        document.title="更改後的標題";
+    </script>
+</body>
+</html>
